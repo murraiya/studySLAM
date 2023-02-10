@@ -2,7 +2,7 @@
 #include <fstream>
 #include <unistd.h>
 #include <pangolin/pangolin.h>
-#include <sophus/se3.hpp>
+#include "sophus/se3.hpp"
 
 using namespace Sophus;
 using namespace std;
