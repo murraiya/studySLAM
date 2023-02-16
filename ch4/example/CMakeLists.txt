@@ -5,6 +5,14 @@ if(USE_UBUNTU_20)
     find_package(fmt REQUIRED)
     set(FMT_LIBRARIES fmt::fmt)
 endif()
+
+include_directories("usr/include/eigen3")
+
+find_package(Sophus REQUIRED)   #find location of header and library files of a library
+include_directories(${Sophus_INCLUDE_DIRS})
+
 include_directories(${Pangolin_INCLUDE_DIRS})
 add_executable(trajectoryError trajectoryError.cpp)
-target_link_libraries(trajectoryError ${Pangolin_LIBRARIES} ${FMT_LIBRARIES})
+target_link_libraries(trajectoryError ${Pangolin_LIBRARIES} ${FMT_LIBRARIES} Sophus::Sophus)
+
+

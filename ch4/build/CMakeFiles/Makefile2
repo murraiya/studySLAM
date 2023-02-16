@@ -54,18 +54,38 @@ CMAKE_BINARY_DIR = /home/sj/slambook2/studySLAM/ch4/build
 
 # The main recursive "all" target.
 all: CMakeFiles/useSophus.dir/all
+all: example/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: example/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/useSophus.dir/clean
+clean: example/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory example
+
+# Recursive "all" directory target.
+example/all: example/CMakeFiles/trajectoryError.dir/all
+
+.PHONY : example/all
+
+# Recursive "preinstall" directory target.
+example/preinstall:
+
+.PHONY : example/preinstall
+
+# Recursive "clean" directory target.
+example/clean: example/CMakeFiles/trajectoryError.dir/clean
+
+.PHONY : example/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/useSophus.dir
@@ -74,7 +94,7 @@ clean: CMakeFiles/useSophus.dir/clean
 CMakeFiles/useSophus.dir/all:
 	$(MAKE) -f CMakeFiles/useSophus.dir/build.make CMakeFiles/useSophus.dir/depend
 	$(MAKE) -f CMakeFiles/useSophus.dir/build.make CMakeFiles/useSophus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sj/slambook2/studySLAM/ch4/build/CMakeFiles --progress-num=1,2 "Built target useSophus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sj/slambook2/studySLAM/ch4/build/CMakeFiles --progress-num=3,4 "Built target useSophus"
 .PHONY : CMakeFiles/useSophus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -93,6 +113,33 @@ useSophus: CMakeFiles/useSophus.dir/rule
 CMakeFiles/useSophus.dir/clean:
 	$(MAKE) -f CMakeFiles/useSophus.dir/build.make CMakeFiles/useSophus.dir/clean
 .PHONY : CMakeFiles/useSophus.dir/clean
+
+#=============================================================================
+# Target rules for target example/CMakeFiles/trajectoryError.dir
+
+# All Build rule for target.
+example/CMakeFiles/trajectoryError.dir/all:
+	$(MAKE) -f example/CMakeFiles/trajectoryError.dir/build.make example/CMakeFiles/trajectoryError.dir/depend
+	$(MAKE) -f example/CMakeFiles/trajectoryError.dir/build.make example/CMakeFiles/trajectoryError.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sj/slambook2/studySLAM/ch4/build/CMakeFiles --progress-num=1,2 "Built target trajectoryError"
+.PHONY : example/CMakeFiles/trajectoryError.dir/all
+
+# Build rule for subdir invocation for target.
+example/CMakeFiles/trajectoryError.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sj/slambook2/studySLAM/ch4/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/trajectoryError.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sj/slambook2/studySLAM/ch4/build/CMakeFiles 0
+.PHONY : example/CMakeFiles/trajectoryError.dir/rule
+
+# Convenience name for target.
+trajectoryError: example/CMakeFiles/trajectoryError.dir/rule
+
+.PHONY : trajectoryError
+
+# clean rule for target.
+example/CMakeFiles/trajectoryError.dir/clean:
+	$(MAKE) -f example/CMakeFiles/trajectoryError.dir/build.make example/CMakeFiles/trajectoryError.dir/clean
+.PHONY : example/CMakeFiles/trajectoryError.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

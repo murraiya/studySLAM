@@ -10,10 +10,14 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/sj/Sophus/build/SophusConfig.cmake"
   "/home/sj/Sophus/build/SophusConfigVersion.cmake"
   "/home/sj/Sophus/build/SophusTargets.cmake"
+  "/home/sj/slambook2/studySLAM/3rdparty/Pangolin/build/src/PangolinConfig.cmake"
+  "/home/sj/slambook2/studySLAM/3rdparty/Pangolin/build/src/PangolinConfigVersion.cmake"
+  "/home/sj/slambook2/studySLAM/3rdparty/Pangolin/build/src/PangolinTargets.cmake"
   "../CMakeLists.txt"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
+  "../example/CMakeLists.txt"
   "/usr/lib/cmake/eigen3/Eigen3Config.cmake"
   "/usr/lib/cmake/eigen3/Eigen3ConfigVersion.cmake"
   "/usr/lib/cmake/eigen3/Eigen3Targets.cmake"
@@ -119,9 +123,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "example/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/useSophus.dir/DependInfo.cmake"
+  "example/CMakeFiles/trajectoryError.dir/DependInfo.cmake"
   )

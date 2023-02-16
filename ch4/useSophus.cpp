@@ -50,7 +50,7 @@ int main(int argc, char **argv) {
   Vector6d se3 = SE3_Rt.log();
   cout << "se3 = " << se3.transpose() << endl;
   // output shows sophus puts translation at first in se(3), then rotation.
-  // save as SO(3) we have hat and vee
+  // same as SO(3) we have hat and vee
   cout << "se3 hat = \n" << Sophus::SE3d::hat(se3) << endl;
   cout << "se3 hat vee = " << Sophus::SE3d::vee(Sophus::SE3d::hat(se3)).transpose() << endl;
 

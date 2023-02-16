@@ -123,6 +123,19 @@ useSophus/fast:
 	$(MAKE) -f CMakeFiles/useSophus.dir/build.make CMakeFiles/useSophus.dir/build
 .PHONY : useSophus/fast
 
+#=============================================================================
+# Target rules for targets named trajectoryError
+
+# Build rule for target.
+trajectoryError: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trajectoryError
+.PHONY : trajectoryError
+
+# fast build rule for target.
+trajectoryError/fast:
+	$(MAKE) -f example/CMakeFiles/trajectoryError.dir/build.make example/CMakeFiles/trajectoryError.dir/build
+.PHONY : trajectoryError/fast
+
 useSophus.o: useSophus.cpp.o
 
 .PHONY : useSophus.o
@@ -159,6 +172,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... useSophus"
+	@echo "... trajectoryError"
 	@echo "... useSophus.o"
 	@echo "... useSophus.i"
 	@echo "... useSophus.s"
